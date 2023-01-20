@@ -58,6 +58,12 @@ const Fataktwo = () => {
                 
             </View>
             <View style={styles.innerflex}>
+                <View style={styles.rectanglethree}>
+
+                </View>
+                <View style={styles.rectangleone}>
+
+                </View>
                 <View style={styles.rectangle}>
                     <TouchableOpacity>
                     <View style={styles.button}>
@@ -79,6 +85,7 @@ const styles = StyleSheet.create({
         padding: 0, width: '100%',
         height: Dimensions.get('window').width * 0.7,
         marginBottom: '10%',
+        backgroundColor:"#FFFFFF"
 
 
     },
@@ -91,6 +98,7 @@ const styles = StyleSheet.create({
         padding: '10%',
         paddingRight: '10%',
         justifyContent: "space-around",
+        backgroundColor:"#FFFFFF"
        
     },
     innerone: {
@@ -176,12 +184,13 @@ const styles = StyleSheet.create({
     rectangle: {
         width: '50%',
         height: '63%',
-        backgroundColor: "white",
+        backgroundColor:'white',
         borderBottomRightRadius: 20,
         borderBottomLeftRadius: 17,
         borderColor: '#ECDDFF',
         borderWidth: 1,
         borderTopWidth: 0,
+        borderLeftWidth:0,
         alignItems: "center",
         justifyContent: 'center',
         //borderLeftWidth:0,
@@ -190,19 +199,28 @@ const styles = StyleSheet.create({
 
     },
     rectangleone: {
-        width: '50%',
-        height: '55%',
-        backgroundColor: "white",
+        width: 70,
+        height: 1,
+        borderWidth:2,
         borderColor: '#ECDDFF',
-
         borderTopWidth: 0,
         alignItems: "center",
         justifyContent: 'center',
+        transform: [{rotate: '49deg'}],
         //borderLeftWidth:0,
-        right: -6,
-
-
+        right: -25,
+        bottom:-24
     },
+    rectanglethree:{
+        width: 43,
+        height: 20,
+        backgroundColor:'white',
+        //borderLeftWidth:0,
+        right: -80,
+        top: -20
+
+
+    }
 
 });
 

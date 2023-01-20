@@ -24,7 +24,7 @@ const Flex = () => {
       {/* <Header/> */}
 
       <View style={{
-        alignItems: 'center', justifyContent: 'space-around', padding: '5%', 
+        alignItems: 'center', justifyContent: 'space-around', padding: '5%', backgroundColor:"#FFFFFF"
       }}>
         <Fataktwo />
         <TouchableOpacity>
@@ -52,7 +52,7 @@ const Flex = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    //backgroundColor: 'red',
+    backgroundColor: 'white',
     //padding:10,
     paddingTop: Platform.OS === 'android' ? 0 : 40,
 
